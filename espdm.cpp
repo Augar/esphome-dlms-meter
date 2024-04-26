@@ -519,7 +519,7 @@ namespace esphome
 
         void DlmsMeter::log_packet(std::vector<uint8_t> data)
         {
-            ESP_LOGV(TAG, format_hex_pretty(data).c_str());
+            ESP_LOGV(TAG, "%s", format_hex_pretty(data).c_str());
         }
     }
 }
